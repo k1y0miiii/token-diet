@@ -28,7 +28,8 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
+body { overflow-x: clip; }
 
 body {
   margin: 0;
@@ -308,6 +309,42 @@ code {
   .bar-val { grid-column: 2; text-align: left; min-width: 0; }
   .controls { gap: 14px; }
   .control-status { margin-left: 0; width: 100%; }
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 560px) {
+  .wrap { padding: 0 14px; }
+  .header-inner { height: 52px; }
+  .links { gap: 13px; font-size: 12px; }
+  .hero { padding: 34px 0 20px; }
+  .headline { font-size: clamp(26px, 8.5vw, 40px); }
+  .sub { font-size: 14px; }
+
+  /* stack toolbar: each control on its own row, label left / control right */
+  .controls { flex-direction: column; align-items: stretch; gap: 12px; padding: 14px; }
+  .control-group { justify-content: space-between; gap: 12px; }
+  .control-status { width: 100%; }
+  .tok-status { font-size: 11.5px; }
+
+  /* editor shorter so the page isn't a mile of textarea on a phone */
+  .json-input { min-height: 220px; font-size: 12.5px; }
+  .meter-panel { padding: 14px; }
+  .meter-row { gap: 12px; }
+  .meter { padding: 12px 14px; }
+  .meter-value { font-size: clamp(26px, 9vw, 34px); }
+
+  /* cost cards: keep 2×2 but tighten so numbers never clip */
+  .models-panel, .chart-panel { padding: 14px; }
+  .models { gap: 10px; }
+  .model { padding: 11px 12px; }
+  .model-cost { font-size: 18px; }
+  .bar-name { font-size: 12px; }
+  .chips { max-height: 200px; }
+  .honesty { padding: 14px; }
+}
+
+@media (max-width: 380px) {
+  .models { grid-template-columns: 1fr; }
 }
 
 /* ---------- Reduced motion ---------- */
