@@ -1,0 +1,429 @@
+{
+  "tokenizer": "cl100k_base",
+  "baseline": "json-pretty",
+  "datasets": [
+    {
+      "dataset": "api_response",
+      "baseline_tokens": 1558,
+      "rows": [
+        {
+          "encoding": "json-min",
+          "tokens": 971,
+          "pct_vs_json": -37.7,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified, no whitespace"
+        },
+        {
+          "encoding": "json-shortkeys",
+          "tokens": 1059,
+          "pct_vs_json": -32.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified + lossless keymap (map counted in tokens)"
+        },
+        {
+          "encoding": "jtf",
+          "tokens": 1069,
+          "pct_vs_json": -31.4,
+          "lossless": true,
+          "applicable": true,
+          "note": "JSON Token Format (vendored, real encoder)"
+        },
+        {
+          "encoding": "yaml",
+          "tokens": 1214,
+          "pct_vs_json": -22.1,
+          "lossless": true,
+          "applicable": true,
+          "note": "human-readable; usually MORE tokens than JSON"
+        },
+        {
+          "encoding": "json-pretty",
+          "tokens": 1558,
+          "pct_vs_json": 0.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "indent=2 — the baseline most apps send"
+        },
+        {
+          "encoding": "csv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        },
+        {
+          "encoding": "tsv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        }
+      ]
+    },
+    {
+      "dataset": "config",
+      "baseline_tokens": 346,
+      "rows": [
+        {
+          "encoding": "json-min",
+          "tokens": 205,
+          "pct_vs_json": -40.8,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified, no whitespace"
+        },
+        {
+          "encoding": "jtf",
+          "tokens": 220,
+          "pct_vs_json": -36.4,
+          "lossless": true,
+          "applicable": true,
+          "note": "JSON Token Format (vendored, real encoder)"
+        },
+        {
+          "encoding": "yaml",
+          "tokens": 253,
+          "pct_vs_json": -26.9,
+          "lossless": true,
+          "applicable": true,
+          "note": "human-readable; usually MORE tokens than JSON"
+        },
+        {
+          "encoding": "json-pretty",
+          "tokens": 346,
+          "pct_vs_json": 0.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "indent=2 — the baseline most apps send"
+        },
+        {
+          "encoding": "json-shortkeys",
+          "tokens": 379,
+          "pct_vs_json": 9.5,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified + lossless keymap (map counted in tokens)"
+        },
+        {
+          "encoding": "csv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        },
+        {
+          "encoding": "tsv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        }
+      ]
+    },
+    {
+      "dataset": "events",
+      "baseline_tokens": 2393,
+      "rows": [
+        {
+          "encoding": "tsv",
+          "tokens": 1121,
+          "pct_vs_json": -53.2,
+          "lossless": false,
+          "applicable": true,
+          "note": "flat table; LOSSY — non-string types coerced to strings"
+        },
+        {
+          "encoding": "csv",
+          "tokens": 1163,
+          "pct_vs_json": -51.4,
+          "lossless": false,
+          "applicable": true,
+          "note": "flat table; LOSSY — non-string types coerced to strings"
+        },
+        {
+          "encoding": "json-min",
+          "tokens": 1580,
+          "pct_vs_json": -34.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified, no whitespace"
+        },
+        {
+          "encoding": "json-shortkeys",
+          "tokens": 1632,
+          "pct_vs_json": -31.8,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified + lossless keymap (map counted in tokens)"
+        },
+        {
+          "encoding": "jtf",
+          "tokens": 1725,
+          "pct_vs_json": -27.9,
+          "lossless": true,
+          "applicable": true,
+          "note": "JSON Token Format (vendored, real encoder)"
+        },
+        {
+          "encoding": "yaml",
+          "tokens": 1892,
+          "pct_vs_json": -20.9,
+          "lossless": true,
+          "applicable": true,
+          "note": "human-readable; usually MORE tokens than JSON"
+        },
+        {
+          "encoding": "json-pretty",
+          "tokens": 2393,
+          "pct_vs_json": 0.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "indent=2 — the baseline most apps send"
+        }
+      ]
+    },
+    {
+      "dataset": "org_tree",
+      "baseline_tokens": 4397,
+      "rows": [
+        {
+          "encoding": "json-shortkeys",
+          "tokens": 2575,
+          "pct_vs_json": -41.4,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified + lossless keymap (map counted in tokens)"
+        },
+        {
+          "encoding": "json-min",
+          "tokens": 2675,
+          "pct_vs_json": -39.2,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified, no whitespace"
+        },
+        {
+          "encoding": "jtf",
+          "tokens": 2717,
+          "pct_vs_json": -38.2,
+          "lossless": true,
+          "applicable": true,
+          "note": "JSON Token Format (vendored, real encoder)"
+        },
+        {
+          "encoding": "yaml",
+          "tokens": 3384,
+          "pct_vs_json": -23.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "human-readable; usually MORE tokens than JSON"
+        },
+        {
+          "encoding": "json-pretty",
+          "tokens": 4397,
+          "pct_vs_json": 0.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "indent=2 — the baseline most apps send"
+        },
+        {
+          "encoding": "csv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        },
+        {
+          "encoding": "tsv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        }
+      ]
+    },
+    {
+      "dataset": "product_catalog",
+      "baseline_tokens": 2074,
+      "rows": [
+        {
+          "encoding": "json-min",
+          "tokens": 1226,
+          "pct_vs_json": -40.9,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified, no whitespace"
+        },
+        {
+          "encoding": "json-shortkeys",
+          "tokens": 1255,
+          "pct_vs_json": -39.5,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified + lossless keymap (map counted in tokens)"
+        },
+        {
+          "encoding": "jtf",
+          "tokens": 1541,
+          "pct_vs_json": -25.7,
+          "lossless": true,
+          "applicable": true,
+          "note": "JSON Token Format (vendored, real encoder)"
+        },
+        {
+          "encoding": "yaml",
+          "tokens": 1548,
+          "pct_vs_json": -25.4,
+          "lossless": true,
+          "applicable": true,
+          "note": "human-readable; usually MORE tokens than JSON"
+        },
+        {
+          "encoding": "json-pretty",
+          "tokens": 2074,
+          "pct_vs_json": 0.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "indent=2 — the baseline most apps send"
+        },
+        {
+          "encoding": "csv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        },
+        {
+          "encoding": "tsv",
+          "tokens": null,
+          "pct_vs_json": null,
+          "lossless": false,
+          "applicable": false,
+          "note": "N/A — only flat arrays-of-objects are tabular"
+        }
+      ]
+    },
+    {
+      "dataset": "users",
+      "baseline_tokens": 3402,
+      "rows": [
+        {
+          "encoding": "csv",
+          "tokens": 1104,
+          "pct_vs_json": -67.5,
+          "lossless": false,
+          "applicable": true,
+          "note": "flat table; LOSSY — non-string types coerced to strings"
+        },
+        {
+          "encoding": "tsv",
+          "tokens": 1141,
+          "pct_vs_json": -66.5,
+          "lossless": false,
+          "applicable": true,
+          "note": "flat table; LOSSY — non-string types coerced to strings"
+        },
+        {
+          "encoding": "jtf",
+          "tokens": 1261,
+          "pct_vs_json": -62.9,
+          "lossless": true,
+          "applicable": true,
+          "note": "JSON Token Format (vendored, real encoder)"
+        },
+        {
+          "encoding": "json-shortkeys",
+          "tokens": 2039,
+          "pct_vs_json": -40.1,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified + lossless keymap (map counted in tokens)"
+        },
+        {
+          "encoding": "json-min",
+          "tokens": 2052,
+          "pct_vs_json": -39.7,
+          "lossless": true,
+          "applicable": true,
+          "note": "minified, no whitespace"
+        },
+        {
+          "encoding": "yaml",
+          "tokens": 2538,
+          "pct_vs_json": -25.4,
+          "lossless": true,
+          "applicable": true,
+          "note": "human-readable; usually MORE tokens than JSON"
+        },
+        {
+          "encoding": "json-pretty",
+          "tokens": 3402,
+          "pct_vs_json": 0.0,
+          "lossless": true,
+          "applicable": true,
+          "note": "indent=2 — the baseline most apps send"
+        }
+      ]
+    }
+  ],
+  "overall": [
+    {
+      "encoding": "jtf",
+      "tokens": 8533,
+      "pct_vs_json": -39.8,
+      "lossless": true,
+      "applicable": true
+    },
+    {
+      "encoding": "json-min",
+      "tokens": 8709,
+      "pct_vs_json": -38.5,
+      "lossless": true,
+      "applicable": true
+    },
+    {
+      "encoding": "json-shortkeys",
+      "tokens": 8939,
+      "pct_vs_json": -36.9,
+      "lossless": true,
+      "applicable": true
+    },
+    {
+      "encoding": "yaml",
+      "tokens": 10829,
+      "pct_vs_json": -23.6,
+      "lossless": true,
+      "applicable": true
+    },
+    {
+      "encoding": "json-pretty",
+      "tokens": 14170,
+      "pct_vs_json": 0.0,
+      "lossless": true,
+      "applicable": true
+    },
+    {
+      "encoding": "csv",
+      "tokens": null,
+      "pct_vs_json": null,
+      "lossless": false,
+      "applicable": false
+    },
+    {
+      "encoding": "tsv",
+      "tokens": null,
+      "pct_vs_json": null,
+      "lossless": false,
+      "applicable": false
+    }
+  ]
+}

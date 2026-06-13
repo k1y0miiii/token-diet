@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "requestId": "req_8f2a91c4",
+    "tookMs": 42,
+    "apiVersion": "2026-04-01"
+  },
+  "pagination": {
+    "page": 1,
+    "perPage": 12,
+    "total": 87,
+    "totalPages": 8,
+    "next": "https://api.example.com/repos/acme/widget/issues?page=2"
+  },
+  "data": [
+    {
+      "id": 100001,
+      "number": 1,
+      "title": "Add dark mode",
+      "state": "open",
+      "author": {
+        "login": "leo",
+        "id": 5325
+      },
+      "labels": [
+        "question",
+        "docs",
+        "bug"
+      ],
+      "comments": 2,
+      "createdAt": "2026-06-23T05:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/1"
+    },
+    {
+      "id": 100002,
+      "number": 2,
+      "title": "Crash on empty payload",
+      "state": "open",
+      "author": {
+        "login": "mira",
+        "id": 3143
+      },
+      "labels": [
+        "docs",
+        "enhancement",
+        "question"
+      ],
+      "comments": 17,
+      "createdAt": "2026-06-23T09:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/2"
+    },
+    {
+      "id": 100003,
+      "number": 3,
+      "title": "Crash on empty payload",
+      "state": "open",
+      "author": {
+        "login": "aria",
+        "id": 3442
+      },
+      "labels": [
+        "bug",
+        "docs",
+        "enhancement"
+      ],
+      "comments": 13,
+      "createdAt": "2026-02-11T05:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/3"
+    },
+    {
+      "id": 100004,
+      "number": 4,
+      "title": "Improve docs for CLI",
+      "state": "open",
+      "author": {
+        "login": "mira",
+        "id": 4441
+      },
+      "labels": [
+        "enhancement",
+        "bug",
+        "docs"
+      ],
+      "comments": 24,
+      "createdAt": "2026-05-23T03:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/4"
+    },
+    {
+      "id": 100005,
+      "number": 5,
+      "title": "Add dark mode",
+      "state": "open",
+      "author": {
+        "login": "leo",
+        "id": 7755
+      },
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 23,
+      "createdAt": "2026-03-23T04:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/5"
+    },
+    {
+      "id": 100006,
+      "number": 6,
+      "title": "Improve docs for CLI",
+      "state": "open",
+      "author": {
+        "login": "aria",
+        "id": 7267
+      },
+      "labels": [
+        "question"
+      ],
+      "comments": 7,
+      "createdAt": "2026-02-24T06:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/6"
+    },
+    {
+      "id": 100007,
+      "number": 7,
+      "title": "Improve docs for CLI",
+      "state": "open",
+      "author": {
+        "login": "leo",
+        "id": 1387
+      },
+      "labels": [
+        "enhancement",
+        "question",
+        "docs"
+      ],
+      "comments": 8,
+      "createdAt": "2026-01-18T06:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/7"
+    },
+    {
+      "id": 100008,
+      "number": 8,
+      "title": "Flaky test on CI",
+      "state": "closed",
+      "author": {
+        "login": "mira",
+        "id": 1452
+      },
+      "labels": [
+        "docs"
+      ],
+      "comments": 5,
+      "createdAt": "2026-05-18T01:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/8"
+    },
+    {
+      "id": 100009,
+      "number": 9,
+      "title": "Crash on empty payload",
+      "state": "closed",
+      "author": {
+        "login": "mira",
+        "id": 6139
+      },
+      "labels": [
+        "wontfix",
+        "good-first-issue"
+      ],
+      "comments": 3,
+      "createdAt": "2026-04-28T04:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/9"
+    },
+    {
+      "id": 100010,
+      "number": 10,
+      "title": "Improve docs for CLI",
+      "state": "open",
+      "author": {
+        "login": "devon",
+        "id": 1027
+      },
+      "labels": [
+        "wontfix",
+        "enhancement",
+        "docs"
+      ],
+      "comments": 13,
+      "createdAt": "2026-01-20T06:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/10"
+    },
+    {
+      "id": 100011,
+      "number": 11,
+      "title": "Flaky test on CI",
+      "state": "open",
+      "author": {
+        "login": "mira",
+        "id": 9308
+      },
+      "labels": [
+        "good-first-issue",
+        "question"
+      ],
+      "comments": 10,
+      "createdAt": "2026-04-19T09:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/11"
+    },
+    {
+      "id": 100012,
+      "number": 12,
+      "title": "Add dark mode",
+      "state": "open",
+      "author": {
+        "login": "devon",
+        "id": 7211
+      },
+      "labels": [
+        "good-first-issue",
+        "enhancement",
+        "docs"
+      ],
+      "comments": 12,
+      "createdAt": "2026-05-10T05:15:00Z",
+      "url": "https://api.example.com/repos/acme/widget/issues/12"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "event": "page_view",
+    "ts": "2026-06-12T21:50:00Z",
+    "sessionId": "s_41830",
+    "path": "/",
+    "referrer": "https://news.ycombinator.com"
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-12T19:17:00Z",
+    "sessionId": "s_84177",
+    "amount": 236.18,
+    "currency": "USD",
+    "items": 3
+  },
+  {
+    "event": "error",
+    "ts": "2026-06-11T20:33:00Z",
+    "sessionId": "s_19038",
+    "code": 500,
+    "message": "Request failed"
+  },
+  {
+    "event": "page_view",
+    "ts": "2026-06-11T23:41:00Z",
+    "sessionId": "s_23833",
+    "path": "/blog/launch",
+    "referrer": "https://google.com"
+  },
+  {
+    "event": "signup",
+    "ts": "2026-06-12T12:37:00Z",
+    "sessionId": "s_33086",
+    "plan": "team",
+    "referralCode": "LAUNCH"
+  },
+  {
+    "event": "error",
+    "ts": "2026-06-11T17:37:00Z",
+    "sessionId": "s_87656",
+    "code": 500,
+    "message": "Request failed"
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-10T23:15:00Z",
+    "sessionId": "s_46559",
+    "amount": 264.79,
+    "currency": "USD",
+    "items": 2
+  },
+  {
+    "event": "signup",
+    "ts": "2026-06-12T19:52:00Z",
+    "sessionId": "s_59674",
+    "plan": "team",
+    "referralCode": null
+  },
+  {
+    "event": "signup",
+    "ts": "2026-06-11T12:41:00Z",
+    "sessionId": "s_37802",
+    "plan": "team",
+    "referralCode": "FRIEND10"
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-11T19:54:00Z",
+    "sessionId": "s_46211",
+    "amount": 170.62,
+    "currency": "USD",
+    "items": 5
+  },
+  {
+    "event": "click",
+    "ts": "2026-06-10T13:56:00Z",
+    "sessionId": "s_63271",
+    "element": "nav-docs",
+    "x": 1137,
+    "y": 492
+  },
+  {
+    "event": "signup",
+    "ts": "2026-06-12T21:41:00Z",
+    "sessionId": "s_68743",
+    "plan": "free",
+    "referralCode": null
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-10T16:54:00Z",
+    "sessionId": "s_41890",
+    "amount": 98.49,
+    "currency": "USD",
+    "items": 5
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-11T18:43:00Z",
+    "sessionId": "s_55056",
+    "amount": 132.96,
+    "currency": "USD",
+    "items": 5
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-11T21:39:00Z",
+    "sessionId": "s_45509",
+    "amount": 98.61,
+    "currency": "USD",
+    "items": 2
+  },
+  {
+    "event": "page_view",
+    "ts": "2026-06-12T13:30:00Z",
+    "sessionId": "s_25670",
+    "path": "/pricing",
+    "referrer": null
+  },
+  {
+    "event": "click",
+    "ts": "2026-06-12T17:27:00Z",
+    "sessionId": "s_87278",
+    "element": "footer-twitter",
+    "x": 1222,
+    "y": 579
+  },
+  {
+    "event": "page_view",
+    "ts": "2026-06-10T14:24:00Z",
+    "sessionId": "s_57301",
+    "path": "/pricing",
+    "referrer": "https://google.com"
+  },
+  {
+    "event": "page_view",
+    "ts": "2026-06-12T18:18:00Z",
+    "sessionId": "s_45954",
+    "path": "/",
+    "referrer": null
+  },
+  {
+    "event": "error",
+    "ts": "2026-06-11T21:18:00Z",
+    "sessionId": "s_93606",
+    "code": 503,
+    "message": "Request failed"
+  },
+  {
+    "event": "page_view",
+    "ts": "2026-06-10T19:28:00Z",
+    "sessionId": "s_71524",
+    "path": "/blog/launch",
+    "referrer": "https://google.com"
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-10T10:26:00Z",
+    "sessionId": "s_72616",
+    "amount": 42.96,
+    "currency": "USD",
+    "items": 1
+  },
+  {
+    "event": "signup",
+    "ts": "2026-06-11T11:46:00Z",
+    "sessionId": "s_92502",
+    "plan": "free",
+    "referralCode": null
+  },
+  {
+    "event": "click",
+    "ts": "2026-06-12T14:15:00Z",
+    "sessionId": "s_42530",
+    "element": "cta-signup",
+    "x": 1142,
+    "y": 852
+  },
+  {
+    "event": "error",
+    "ts": "2026-06-12T22:49:00Z",
+    "sessionId": "s_39581",
+    "code": 503,
+    "message": "Request failed"
+  },
+  {
+    "event": "signup",
+    "ts": "2026-06-11T14:47:00Z",
+    "sessionId": "s_66207",
+    "plan": "team",
+    "referralCode": "LAUNCH"
+  },
+  {
+    "event": "error",
+    "ts": "2026-06-10T19:57:00Z",
+    "sessionId": "s_23006",
+    "code": 404,
+    "message": "Request failed"
+  },
+  {
+    "event": "click",
+    "ts": "2026-06-11T20:15:00Z",
+    "sessionId": "s_30585",
+    "element": "cta-signup",
+    "x": 355,
+    "y": 153
+  },
+  {
+    "event": "click",
+    "ts": "2026-06-10T16:38:00Z",
+    "sessionId": "s_87832",
+    "element": "nav-docs",
+    "x": 596,
+    "y": 66
+  },
+  {
+    "event": "click",
+    "ts": "2026-06-11T21:28:00Z",
+    "sessionId": "s_69510",
+    "element": "cta-signup",
+    "x": 1407,
+    "y": 478
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-12T19:52:00Z",
+    "sessionId": "s_35928",
+    "amount": 132.86,
+    "currency": "USD",
+    "items": 5
+  },
+  {
+    "event": "click",
+    "ts": "2026-06-12T12:27:00Z",
+    "sessionId": "s_28643",
+    "element": "cta-signup",
+    "x": 122,
+    "y": 339
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-12T21:46:00Z",
+    "sessionId": "s_47828",
+    "amount": 136.91,
+    "currency": "USD",
+    "items": 4
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-12T16:27:00Z",
+    "sessionId": "s_75597",
+    "amount": 166.05,
+    "currency": "USD",
+    "items": 4
+  },
+  {
+    "event": "page_view",
+    "ts": "2026-06-12T10:37:00Z",
+    "sessionId": "s_52247",
+    "path": "/docs",
+    "referrer": null
+  },
+  {
+    "event": "page_view",
+    "ts": "2026-06-10T20:46:00Z",
+    "sessionId": "s_86955",
+    "path": "/",
+    "referrer": "https://news.ycombinator.com"
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-12T10:58:00Z",
+    "sessionId": "s_32962",
+    "amount": 145.97,
+    "currency": "USD",
+    "items": 4
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-10T19:37:00Z",
+    "sessionId": "s_93202",
+    "amount": 245.31,
+    "currency": "USD",
+    "items": 1
+  },
+  {
+    "event": "signup",
+    "ts": "2026-06-11T16:31:00Z",
+    "sessionId": "s_52081",
+    "plan": "free",
+    "referralCode": null
+  },
+  {
+    "event": "purchase",
+    "ts": "2026-06-11T21:41:00Z",
+    "sessionId": "s_47777",
+    "amount": 201.48,
+    "currency": "USD",
+    "items": 4
+  }
+]

@@ -1,0 +1,340 @@
+{
+  "updatedAt": "2026-06-13T00:00:00Z",
+  "count": 24,
+  "products": [
+    {
+      "sku": "SKU-1001",
+      "name": "Lumen Mini",
+      "category": "Accessories",
+      "price": 46.08,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 3.4,
+      "reviews": 827,
+      "tags": [
+        "new",
+        "eco",
+        "sale"
+      ]
+    },
+    {
+      "sku": "SKU-1002",
+      "name": "Aurora Pro",
+      "category": "Lighting",
+      "price": 152.01,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.3,
+      "reviews": 105,
+      "tags": [
+        "bestseller"
+      ]
+    },
+    {
+      "sku": "SKU-1003",
+      "name": "Lumen Pro",
+      "category": "Home",
+      "price": 181.55,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 3.4,
+      "reviews": 490,
+      "tags": [
+        "sale",
+        "bestseller",
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1004",
+      "name": "Aurora One",
+      "category": "Accessories",
+      "price": 48.07,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.8,
+      "reviews": 945,
+      "tags": [
+        "sale"
+      ]
+    },
+    {
+      "sku": "SKU-1005",
+      "name": "Vertex Max",
+      "category": "Lighting",
+      "price": 284.99,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.1,
+      "reviews": 967,
+      "tags": [
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1006",
+      "name": "Lumen Pro",
+      "category": "Accessories",
+      "price": 85.77,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.5,
+      "reviews": 279,
+      "tags": [
+        "bestseller"
+      ]
+    },
+    {
+      "sku": "SKU-1007",
+      "name": "Vertex Max",
+      "category": "Lighting",
+      "price": 115.4,
+      "currency": "EUR",
+      "inStock": false,
+      "rating": 4.5,
+      "reviews": 1187,
+      "tags": [
+        "eco",
+        "sale",
+        "limited"
+      ]
+    },
+    {
+      "sku": "SKU-1008",
+      "name": "Lumen Air",
+      "category": "Home",
+      "price": 140.65,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 3.9,
+      "reviews": 659,
+      "tags": [
+        "sale"
+      ]
+    },
+    {
+      "sku": "SKU-1009",
+      "name": "Lumen Air",
+      "category": "Wearables",
+      "price": 343.28,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 3.8,
+      "reviews": 968,
+      "tags": [
+        "eco",
+        "limited",
+        "bestseller"
+      ]
+    },
+    {
+      "sku": "SKU-1010",
+      "name": "Echo Pro",
+      "category": "Accessories",
+      "price": 385.39,
+      "currency": "EUR",
+      "inStock": false,
+      "rating": 4.9,
+      "reviews": 679,
+      "tags": [
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1011",
+      "name": "Aurora One",
+      "category": "Accessories",
+      "price": 17.94,
+      "currency": "EUR",
+      "inStock": false,
+      "rating": 4.8,
+      "reviews": 316,
+      "tags": [
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1012",
+      "name": "Pulse Max",
+      "category": "Lighting",
+      "price": 280.08,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.7,
+      "reviews": 1092,
+      "tags": [
+        "bestseller",
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1013",
+      "name": "Lumen Mini",
+      "category": "Lighting",
+      "price": 38.48,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.9,
+      "reviews": 465,
+      "tags": [
+        "new",
+        "eco",
+        "limited"
+      ]
+    },
+    {
+      "sku": "SKU-1014",
+      "name": "Echo Mini",
+      "category": "Accessories",
+      "price": 76.38,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 3.3,
+      "reviews": 664,
+      "tags": [
+        "bestseller"
+      ]
+    },
+    {
+      "sku": "SKU-1015",
+      "name": "Pulse Max",
+      "category": "Accessories",
+      "price": 68.34,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.2,
+      "reviews": 368,
+      "tags": [
+        "sale"
+      ]
+    },
+    {
+      "sku": "SKU-1016",
+      "name": "Aurora One",
+      "category": "Accessories",
+      "price": 251.83,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.8,
+      "reviews": 293,
+      "tags": [
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1017",
+      "name": "Echo Max",
+      "category": "Accessories",
+      "price": 110.81,
+      "currency": "EUR",
+      "inStock": false,
+      "rating": 4.6,
+      "reviews": 589,
+      "tags": [
+        "limited",
+        "sale",
+        "new"
+      ]
+    },
+    {
+      "sku": "SKU-1018",
+      "name": "Vertex Max",
+      "category": "Lighting",
+      "price": 127.77,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.4,
+      "reviews": 935,
+      "tags": [
+        "sale",
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1019",
+      "name": "Vertex Mini",
+      "category": "Wearables",
+      "price": 159.59,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 3.7,
+      "reviews": 604,
+      "tags": [
+        "eco"
+      ]
+    },
+    {
+      "sku": "SKU-1020",
+      "name": "Pulse Mini",
+      "category": "Lighting",
+      "price": 346.78,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 5.0,
+      "reviews": 1017,
+      "tags": [
+        "sale",
+        "bestseller"
+      ]
+    },
+    {
+      "sku": "SKU-1021",
+      "name": "Nimbus Pro",
+      "category": "Lighting",
+      "price": 108.99,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.6,
+      "reviews": 280,
+      "tags": [
+        "new",
+        "limited",
+        "sale"
+      ]
+    },
+    {
+      "sku": "SKU-1022",
+      "name": "Vertex Mini",
+      "category": "Lighting",
+      "price": 153.2,
+      "currency": "EUR",
+      "inStock": false,
+      "rating": 4.8,
+      "reviews": 669,
+      "tags": [
+        "eco",
+        "sale",
+        "new"
+      ]
+    },
+    {
+      "sku": "SKU-1023",
+      "name": "Nimbus One",
+      "category": "Home",
+      "price": 217.44,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.7,
+      "reviews": 526,
+      "tags": [
+        "bestseller",
+        "limited"
+      ]
+    },
+    {
+      "sku": "SKU-1024",
+      "name": "Aurora Air",
+      "category": "Audio",
+      "price": 66.47,
+      "currency": "EUR",
+      "inStock": true,
+      "rating": 4.7,
+      "reviews": 813,
+      "tags": [
+        "bestseller",
+        "new",
+        "sale"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "service": "checkout-api",
+  "version": "3.4.1",
+  "environment": "production",
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8443,
+    "tls": {
+      "enabled": true,
+      "cert": "/etc/ssl/checkout.crt",
+      "minVersion": "1.3"
+    },
+    "workers": 8,
+    "timeoutSeconds": 30
+  },
+  "database": {
+    "primary": {
+      "host": "db-primary.internal",
+      "port": 5432,
+      "pool": {
+        "min": 4,
+        "max": 32
+      }
+    },
+    "replica": {
+      "host": "db-replica.internal",
+      "port": 5432,
+      "readOnly": true
+    },
+    "ssl": true
+  },
+  "cache": {
+    "backend": "redis",
+    "ttlSeconds": 600,
+    "nodes": [
+      "cache-1:6379",
+      "cache-2:6379"
+    ]
+  },
+  "featureFlags": {
+    "newCheckout": true,
+    "applePay": true,
+    "buyNowPayLater": false,
+    "guestCheckout": true
+  },
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "sampleRate": 0.1
+  },
+  "rateLimits": {
+    "perIp": 100,
+    "perUser": 1000,
+    "windowSeconds": 60
+  }
+}

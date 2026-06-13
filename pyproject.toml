@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "token-diet"
+version = "0.1.0"
+description = "Put your LLM payloads on a token diet — reproducibly benchmark how many tokens the same data costs in different encodings."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Maxim Chumakov", email = "chumakov.mr@gmail.com" }]
+keywords = ["llm", "tokens", "tiktoken", "json", "jtf", "prompt", "cost", "encoding"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: General",
+]
+dependencies = ["tiktoken>=0.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+yaml = ["pyyaml>=6"]
+
+[project.urls]
+Homepage = "https://github.com/k1y0miiii/token-diet"
+Repository = "https://github.com/k1y0miiii/token-diet"
+
+[project.scripts]
+token-diet = "token_diet.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["token_diet"]
+
+[tool.hatch.build.targets.sdist]
+include = ["token_diet", "datasets", "tests", "README.md", "LICENSE"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B"]
+# The vendored JTF copy is third-party; do not lint it.
+exclude = ["token_diet/vendor/jtf.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

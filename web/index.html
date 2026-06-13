@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>token-diet — see what your JSON costs, then put it on a diet</title>
+  <meta name="description" content="Paste JSON, see the real token count and dollar cost across models, then put it on a lossless diet with JTF. Honest, client-side, GPT-family tokenizer." />
+
+  <meta name="theme-color" content="#0A0B0C" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="token-diet — put your LLM payloads on a token diet" />
+  <meta property="og:description" content="See what your JSON costs in real tokens & dollars, then cut it losslessly with JTF." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0B0C'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%2334E7FF' font-family='monospace'%3E%E2%97%89%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#playground">Skip to playground</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="prompt" aria-hidden="true">~ $</span>
+        <h1 class="brand-name">token-diet</h1>
+      </div>
+      <nav class="links" aria-label="Project links">
+        <a href="https://github.com/k1y0miiii/token-diet" rel="noopener">repo</a>
+        <a href="https://github.com/k1y0miiii/json-token-format" rel="noopener">JTF</a>
+        <a href="https://k1y0miiii.github.io" rel="noopener">portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker" aria-hidden="true">// token economics terminal</p>
+      <h2 class="headline">See what your JSON costs.<br /><span class="accent">Then put it on a diet.</span></h2>
+      <p class="sub">Most apps ship LLMs pretty-printed JSON — the most expensive way to send structured data.
+        Paste yours below: get the <strong>real</strong> token count and dollar cost, watch token
+        boundaries light up, then cut it <strong>losslessly</strong> with JTF.</p>
+    </section>
+
+    <section id="playground" class="playground" aria-label="Interactive token playground">
+
+      <!-- Controls bar -->
+      <div class="controls card">
+        <div class="control-group">
+          <span class="control-label">tokenizer</span>
+          <div class="toggle" role="radiogroup" aria-label="Tokenizer">
+            <button class="toggle-btn is-active" role="radio" aria-checked="true" data-tokenizer="cl100k">cl100k_base</button>
+            <button class="toggle-btn" role="radio" aria-checked="false" data-tokenizer="o200k">o200k_base</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">sample</span>
+          <select id="sample-select" class="select" aria-label="Load a sample payload">
+            <option value="users">users (50 rows)</option>
+            <option value="api">api response</option>
+            <option value="config">config</option>
+            <option value="events">events log</option>
+          </select>
+        </div>
+        <div class="control-group control-status" aria-live="polite">
+          <span id="tok-status" class="tok-status loading">loading tokenizer…</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- LEFT: editor -->
+        <div class="panel card editor-panel">
+          <div class="panel-head">
+            <span class="dot dot-r" aria-hidden="true"></span>
+            <span class="dot dot-a" aria-hidden="true"></span>
+            <span class="dot dot-g" aria-hidden="true"></span>
+            <span class="panel-title">input.json</span>
+            <span id="json-status" class="json-status ok">valid</span>
+          </div>
+          <textarea id="json-input" class="json-input" spellcheck="false" autocomplete="off"
+            aria-label="JSON input" placeholder="Paste JSON here…"></textarea>
+        </div>
+
+        <!-- RIGHT: live meters + chips -->
+        <div class="panel card meter-panel">
+          <div class="meter-row">
+            <div class="meter">
+              <div class="meter-label">tokens <span class="meter-enc" id="meter-enc">json-pretty</span></div>
+              <div class="meter-value" id="token-count" data-target="0">0</div>
+            </div>
+            <div class="meter">
+              <div class="meter-label">est. cost <span class="hint" title="Sonnet input price, see pricing note">/ Sonnet in</span></div>
+              <div class="meter-value cost" id="cost-value" data-target="0">$0.00</div>
+            </div>
+          </div>
+
+          <div class="diet-cta-wrap">
+            <button id="diet-btn" class="diet-btn" type="button">
+              <span class="diet-emoji" aria-hidden="true">💸</span> Put it on a diet
+            </button>
+            <div id="diet-reveal" class="diet-reveal" hidden aria-live="polite">
+              <span class="reveal-pct" id="reveal-pct">−0%</span>
+              <span class="reveal-detail" id="reveal-detail"></span>
+            </div>
+          </div>
+
+          <div class="chips-head">
+            <span class="chips-title">token chips</span>
+            <span class="chips-sub" id="chips-sub">each chip = 1 token of the current encoding</span>
+          </div>
+          <div id="chips" class="chips" aria-label="Tokenized view" role="img"></div>
+        </div>
+      </div>
+
+      <!-- Encodings comparison -->
+      <div class="panel card chart-panel">
+        <div class="panel-head plain">
+          <span class="panel-title">encodings, by token count</span>
+          <span class="panel-note">lower is cheaper · baseline = json-pretty</span>
+        </div>
+        <div id="bars" class="bars"></div>
+      </div>
+
+      <!-- Cost across models -->
+      <div class="panel card models-panel">
+        <div class="panel-head plain">
+          <span class="panel-title">cost across models</span>
+          <span class="panel-note" id="models-note">current encoding · input tokens</span>
+        </div>
+        <div id="models" class="models"></div>
+      </div>
+    </section>
+
+    <section class="honesty card" aria-label="Honesty note">
+      <p>
+        <span class="honesty-mark" aria-hidden="true">●</span>
+        <strong>Honest measurement.</strong> Counts come from a real GPT-family tokenizer
+        (<code>gpt-tokenizer</code>, cl100k_base / o200k_base) running in your browser — never estimates.
+        Claude tokenizes differently; treat the <em>count</em> as a close GPT-family proxy, not exact Anthropic counts.
+        For exact Anthropic counts use <code>token-diet bench --api</code>. Prices are live from
+        <a href="https://github.com/BerriAI/litellm" rel="noopener">LiteLLM</a> (USD / 1M tokens, priced as input tokens),
+        cached locally and refreshed daily — <span id="price-source">prices: snapshot</span>.
+        JTF is the project's own <strong>lossless</strong> format — these are the true encoder's numbers.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="prompt" aria-hidden="true">~ $</span>
+      <span>token-diet · MIT · counts via gpt-tokenizer · built with no frameworks</span>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+  <noscript>
+    <p style="padding:2rem;color:#FF6B6B;font-family:monospace">
+      This playground needs JavaScript (it runs a real tokenizer in your browser).
+    </p>
+  </noscript>
+</body>
+</html>

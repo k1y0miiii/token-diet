@@ -1,0 +1,685 @@
+{
+  "name": "CEO",
+  "headcount": 5,
+  "budget": 157000,
+  "reports": [
+    {
+      "name": "CEO.0",
+      "headcount": 7,
+      "budget": 452000,
+      "reports": [
+        {
+          "name": "CEO.0.0",
+          "headcount": 10,
+          "budget": 360000,
+          "reports": [
+            {
+              "name": "CEO.0.0.0",
+              "headcount": 11,
+              "budget": 214000,
+              "reports": [
+                {
+                  "name": "CEO.0.0.0.0",
+                  "headcount": 8,
+                  "budget": 276000
+                },
+                {
+                  "name": "CEO.0.0.0.1",
+                  "headcount": 8,
+                  "budget": 395000
+                },
+                {
+                  "name": "CEO.0.0.0.2",
+                  "headcount": 4,
+                  "budget": 311000
+                }
+              ]
+            },
+            {
+              "name": "CEO.0.0.1",
+              "headcount": 8,
+              "budget": 456000,
+              "reports": [
+                {
+                  "name": "CEO.0.0.1.0",
+                  "headcount": 12,
+                  "budget": 136000
+                },
+                {
+                  "name": "CEO.0.0.1.1",
+                  "headcount": 11,
+                  "budget": 93000
+                },
+                {
+                  "name": "CEO.0.0.1.2",
+                  "headcount": 5,
+                  "budget": 313000
+                }
+              ]
+            },
+            {
+              "name": "CEO.0.0.2",
+              "headcount": 11,
+              "budget": 374000,
+              "reports": [
+                {
+                  "name": "CEO.0.0.2.0",
+                  "headcount": 10,
+                  "budget": 221000
+                },
+                {
+                  "name": "CEO.0.0.2.1",
+                  "headcount": 2,
+                  "budget": 469000
+                },
+                {
+                  "name": "CEO.0.0.2.2",
+                  "headcount": 4,
+                  "budget": 394000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CEO.0.1",
+          "headcount": 5,
+          "budget": 165000,
+          "reports": [
+            {
+              "name": "CEO.0.1.0",
+              "headcount": 4,
+              "budget": 125000,
+              "reports": [
+                {
+                  "name": "CEO.0.1.0.0",
+                  "headcount": 1,
+                  "budget": 73000
+                },
+                {
+                  "name": "CEO.0.1.0.1",
+                  "headcount": 4,
+                  "budget": 293000
+                },
+                {
+                  "name": "CEO.0.1.0.2",
+                  "headcount": 10,
+                  "budget": 485000
+                }
+              ]
+            },
+            {
+              "name": "CEO.0.1.1",
+              "headcount": 2,
+              "budget": 283000,
+              "reports": [
+                {
+                  "name": "CEO.0.1.1.0",
+                  "headcount": 7,
+                  "budget": 372000
+                },
+                {
+                  "name": "CEO.0.1.1.1",
+                  "headcount": 10,
+                  "budget": 149000
+                },
+                {
+                  "name": "CEO.0.1.1.2",
+                  "headcount": 12,
+                  "budget": 406000
+                }
+              ]
+            },
+            {
+              "name": "CEO.0.1.2",
+              "headcount": 7,
+              "budget": 303000,
+              "reports": [
+                {
+                  "name": "CEO.0.1.2.0",
+                  "headcount": 7,
+                  "budget": 174000
+                },
+                {
+                  "name": "CEO.0.1.2.1",
+                  "headcount": 3,
+                  "budget": 385000
+                },
+                {
+                  "name": "CEO.0.1.2.2",
+                  "headcount": 12,
+                  "budget": 52000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CEO.0.2",
+          "headcount": 2,
+          "budget": 448000,
+          "reports": [
+            {
+              "name": "CEO.0.2.0",
+              "headcount": 7,
+              "budget": 162000,
+              "reports": [
+                {
+                  "name": "CEO.0.2.0.0",
+                  "headcount": 3,
+                  "budget": 461000
+                },
+                {
+                  "name": "CEO.0.2.0.1",
+                  "headcount": 12,
+                  "budget": 315000
+                },
+                {
+                  "name": "CEO.0.2.0.2",
+                  "headcount": 8,
+                  "budget": 75000
+                }
+              ]
+            },
+            {
+              "name": "CEO.0.2.1",
+              "headcount": 9,
+              "budget": 177000,
+              "reports": [
+                {
+                  "name": "CEO.0.2.1.0",
+                  "headcount": 2,
+                  "budget": 283000
+                },
+                {
+                  "name": "CEO.0.2.1.1",
+                  "headcount": 3,
+                  "budget": 460000
+                },
+                {
+                  "name": "CEO.0.2.1.2",
+                  "headcount": 8,
+                  "budget": 391000
+                }
+              ]
+            },
+            {
+              "name": "CEO.0.2.2",
+              "headcount": 9,
+              "budget": 336000,
+              "reports": [
+                {
+                  "name": "CEO.0.2.2.0",
+                  "headcount": 10,
+                  "budget": 212000
+                },
+                {
+                  "name": "CEO.0.2.2.1",
+                  "headcount": 8,
+                  "budget": 363000
+                },
+                {
+                  "name": "CEO.0.2.2.2",
+                  "headcount": 12,
+                  "budget": 308000
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CEO.1",
+      "headcount": 7,
+      "budget": 475000,
+      "reports": [
+        {
+          "name": "CEO.1.0",
+          "headcount": 9,
+          "budget": 278000,
+          "reports": [
+            {
+              "name": "CEO.1.0.0",
+              "headcount": 3,
+              "budget": 430000,
+              "reports": [
+                {
+                  "name": "CEO.1.0.0.0",
+                  "headcount": 8,
+                  "budget": 280000
+                },
+                {
+                  "name": "CEO.1.0.0.1",
+                  "headcount": 5,
+                  "budget": 434000
+                },
+                {
+                  "name": "CEO.1.0.0.2",
+                  "headcount": 4,
+                  "budget": 480000
+                }
+              ]
+            },
+            {
+              "name": "CEO.1.0.1",
+              "headcount": 11,
+              "budget": 191000,
+              "reports": [
+                {
+                  "name": "CEO.1.0.1.0",
+                  "headcount": 9,
+                  "budget": 298000
+                },
+                {
+                  "name": "CEO.1.0.1.1",
+                  "headcount": 11,
+                  "budget": 172000
+                },
+                {
+                  "name": "CEO.1.0.1.2",
+                  "headcount": 5,
+                  "budget": 275000
+                }
+              ]
+            },
+            {
+              "name": "CEO.1.0.2",
+              "headcount": 2,
+              "budget": 415000,
+              "reports": [
+                {
+                  "name": "CEO.1.0.2.0",
+                  "headcount": 5,
+                  "budget": 170000
+                },
+                {
+                  "name": "CEO.1.0.2.1",
+                  "headcount": 5,
+                  "budget": 221000
+                },
+                {
+                  "name": "CEO.1.0.2.2",
+                  "headcount": 6,
+                  "budget": 326000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CEO.1.1",
+          "headcount": 2,
+          "budget": 120000,
+          "reports": [
+            {
+              "name": "CEO.1.1.0",
+              "headcount": 3,
+              "budget": 168000,
+              "reports": [
+                {
+                  "name": "CEO.1.1.0.0",
+                  "headcount": 7,
+                  "budget": 405000
+                },
+                {
+                  "name": "CEO.1.1.0.1",
+                  "headcount": 3,
+                  "budget": 411000
+                },
+                {
+                  "name": "CEO.1.1.0.2",
+                  "headcount": 4,
+                  "budget": 82000
+                }
+              ]
+            },
+            {
+              "name": "CEO.1.1.1",
+              "headcount": 7,
+              "budget": 258000,
+              "reports": [
+                {
+                  "name": "CEO.1.1.1.0",
+                  "headcount": 6,
+                  "budget": 327000
+                },
+                {
+                  "name": "CEO.1.1.1.1",
+                  "headcount": 8,
+                  "budget": 262000
+                },
+                {
+                  "name": "CEO.1.1.1.2",
+                  "headcount": 1,
+                  "budget": 155000
+                }
+              ]
+            },
+            {
+              "name": "CEO.1.1.2",
+              "headcount": 7,
+              "budget": 249000,
+              "reports": [
+                {
+                  "name": "CEO.1.1.2.0",
+                  "headcount": 10,
+                  "budget": 406000
+                },
+                {
+                  "name": "CEO.1.1.2.1",
+                  "headcount": 1,
+                  "budget": 488000
+                },
+                {
+                  "name": "CEO.1.1.2.2",
+                  "headcount": 10,
+                  "budget": 244000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CEO.1.2",
+          "headcount": 8,
+          "budget": 53000,
+          "reports": [
+            {
+              "name": "CEO.1.2.0",
+              "headcount": 6,
+              "budget": 202000,
+              "reports": [
+                {
+                  "name": "CEO.1.2.0.0",
+                  "headcount": 7,
+                  "budget": 486000
+                },
+                {
+                  "name": "CEO.1.2.0.1",
+                  "headcount": 7,
+                  "budget": 325000
+                },
+                {
+                  "name": "CEO.1.2.0.2",
+                  "headcount": 12,
+                  "budget": 426000
+                }
+              ]
+            },
+            {
+              "name": "CEO.1.2.1",
+              "headcount": 9,
+              "budget": 459000,
+              "reports": [
+                {
+                  "name": "CEO.1.2.1.0",
+                  "headcount": 10,
+                  "budget": 162000
+                },
+                {
+                  "name": "CEO.1.2.1.1",
+                  "headcount": 8,
+                  "budget": 162000
+                },
+                {
+                  "name": "CEO.1.2.1.2",
+                  "headcount": 5,
+                  "budget": 273000
+                }
+              ]
+            },
+            {
+              "name": "CEO.1.2.2",
+              "headcount": 8,
+              "budget": 64000,
+              "reports": [
+                {
+                  "name": "CEO.1.2.2.0",
+                  "headcount": 7,
+                  "budget": 222000
+                },
+                {
+                  "name": "CEO.1.2.2.1",
+                  "headcount": 11,
+                  "budget": 397000
+                },
+                {
+                  "name": "CEO.1.2.2.2",
+                  "headcount": 7,
+                  "budget": 420000
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CEO.2",
+      "headcount": 3,
+      "budget": 480000,
+      "reports": [
+        {
+          "name": "CEO.2.0",
+          "headcount": 8,
+          "budget": 115000,
+          "reports": [
+            {
+              "name": "CEO.2.0.0",
+              "headcount": 10,
+              "budget": 323000,
+              "reports": [
+                {
+                  "name": "CEO.2.0.0.0",
+                  "headcount": 1,
+                  "budget": 251000
+                },
+                {
+                  "name": "CEO.2.0.0.1",
+                  "headcount": 10,
+                  "budget": 338000
+                },
+                {
+                  "name": "CEO.2.0.0.2",
+                  "headcount": 11,
+                  "budget": 63000
+                }
+              ]
+            },
+            {
+              "name": "CEO.2.0.1",
+              "headcount": 2,
+              "budget": 379000,
+              "reports": [
+                {
+                  "name": "CEO.2.0.1.0",
+                  "headcount": 7,
+                  "budget": 119000
+                },
+                {
+                  "name": "CEO.2.0.1.1",
+                  "headcount": 8,
+                  "budget": 143000
+                },
+                {
+                  "name": "CEO.2.0.1.2",
+                  "headcount": 1,
+                  "budget": 183000
+                }
+              ]
+            },
+            {
+              "name": "CEO.2.0.2",
+              "headcount": 7,
+              "budget": 217000,
+              "reports": [
+                {
+                  "name": "CEO.2.0.2.0",
+                  "headcount": 4,
+                  "budget": 282000
+                },
+                {
+                  "name": "CEO.2.0.2.1",
+                  "headcount": 6,
+                  "budget": 222000
+                },
+                {
+                  "name": "CEO.2.0.2.2",
+                  "headcount": 7,
+                  "budget": 192000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CEO.2.1",
+          "headcount": 7,
+          "budget": 179000,
+          "reports": [
+            {
+              "name": "CEO.2.1.0",
+              "headcount": 2,
+              "budget": 290000,
+              "reports": [
+                {
+                  "name": "CEO.2.1.0.0",
+                  "headcount": 1,
+                  "budget": 433000
+                },
+                {
+                  "name": "CEO.2.1.0.1",
+                  "headcount": 9,
+                  "budget": 76000
+                },
+                {
+                  "name": "CEO.2.1.0.2",
+                  "headcount": 6,
+                  "budget": 164000
+                }
+              ]
+            },
+            {
+              "name": "CEO.2.1.1",
+              "headcount": 11,
+              "budget": 85000,
+              "reports": [
+                {
+                  "name": "CEO.2.1.1.0",
+                  "headcount": 11,
+                  "budget": 70000
+                },
+                {
+                  "name": "CEO.2.1.1.1",
+                  "headcount": 1,
+                  "budget": 176000
+                },
+                {
+                  "name": "CEO.2.1.1.2",
+                  "headcount": 4,
+                  "budget": 479000
+                }
+              ]
+            },
+            {
+              "name": "CEO.2.1.2",
+              "headcount": 1,
+              "budget": 368000,
+              "reports": [
+                {
+                  "name": "CEO.2.1.2.0",
+                  "headcount": 3,
+                  "budget": 172000
+                },
+                {
+                  "name": "CEO.2.1.2.1",
+                  "headcount": 3,
+                  "budget": 292000
+                },
+                {
+                  "name": "CEO.2.1.2.2",
+                  "headcount": 11,
+                  "budget": 108000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CEO.2.2",
+          "headcount": 10,
+          "budget": 161000,
+          "reports": [
+            {
+              "name": "CEO.2.2.0",
+              "headcount": 8,
+              "budget": 408000,
+              "reports": [
+                {
+                  "name": "CEO.2.2.0.0",
+                  "headcount": 5,
+                  "budget": 442000
+                },
+                {
+                  "name": "CEO.2.2.0.1",
+                  "headcount": 6,
+                  "budget": 135000
+                },
+                {
+                  "name": "CEO.2.2.0.2",
+                  "headcount": 10,
+                  "budget": 360000
+                }
+              ]
+            },
+            {
+              "name": "CEO.2.2.1",
+              "headcount": 12,
+              "budget": 417000,
+              "reports": [
+                {
+                  "name": "CEO.2.2.1.0",
+                  "headcount": 2,
+                  "budget": 448000
+                },
+                {
+                  "name": "CEO.2.2.1.1",
+                  "headcount": 3,
+                  "budget": 209000
+                },
+                {
+                  "name": "CEO.2.2.1.2",
+                  "headcount": 2,
+                  "budget": 346000
+                }
+              ]
+            },
+            {
+              "name": "CEO.2.2.2",
+              "headcount": 1,
+              "budget": 209000,
+              "reports": [
+                {
+                  "name": "CEO.2.2.2.0",
+                  "headcount": 10,
+                  "budget": 396000
+                },
+                {
+                  "name": "CEO.2.2.2.1",
+                  "headcount": 7,
+                  "budget": 253000
+                },
+                {
+                  "name": "CEO.2.2.2.2",
+                  "headcount": 12,
+                  "budget": 151000
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
