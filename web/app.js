@@ -796,7 +796,8 @@ function refresh({ resetEncoding = true } = {}) {
 function resetDietButton() {
   els.dietBtn.disabled = false;
   els.dietBtn.classList.remove("dieted");
-  els.dietBtn.innerHTML = '<span class="diet-emoji" aria-hidden="true">💸</span> Put it on a diet';
+  els.dietBtn.innerHTML =
+    '<svg class="diet-icon" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> Put it on a diet';
   els.dietReveal.hidden = true;
 }
 
@@ -840,7 +841,7 @@ function putOnDiet() {
   }
 
   els.dietBtn.classList.add("dieted");
-  els.dietBtn.innerHTML = `<span class="diet-emoji" aria-hidden="true">🥗</span> On a diet — showing ${best}`;
+  els.dietBtn.innerHTML = `<svg class="diet-icon" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg> On a diet — showing ${best}`;
 }
 
 // ---- events ----------------------------------------------------------------

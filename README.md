@@ -2,7 +2,7 @@ English · [Русский](README.ru.md)
 
 > ▶ **Live playground** — paste JSON, watch the token count drop: **https://k1y0miiii.github.io/token-diet/**
 
-[![token-diet playground — see what your JSON costs, then put it on a diet](docs/playground.png)](https://k1y0miiii.github.io/token-diet/)
+[![token-diet playground — see what your JSON costs, then put it on a diet](docs/playground.gif)](https://k1y0miiii.github.io/token-diet/)
 
 # token-diet
 
