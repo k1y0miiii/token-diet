@@ -1,7 +1,8 @@
 [English](README.md) · Русский
 
-> ▶ **Живая песочница** — вставьте JSON и смотрите, как падает счётчик токенов: **https://k1y0miiii.github.io/token-diet/** _(включите Settings → Pages → GitHub Actions, чтобы опубликовать)_
-<!-- screenshot: docs/playground.png -->
+> ▶ **Живая песочница** — вставьте JSON и смотрите, как падает счётчик токенов: **https://k1y0miiii.github.io/token-diet/**
+
+[![Песочница token-diet — посмотри, во сколько обходится твой JSON, и посади его на диету](docs/playground.png)](https://k1y0miiii.github.io/token-diet/)
 
 # token-diet
 
