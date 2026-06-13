@@ -25,7 +25,7 @@ Measured on the bundled datasets:
 | `events` (40 analytics events) | array of objects | `jtf` | **−27.9%** |
 
 - **JTF** stays **lossless** (types preserved, real round-trip) and handles nested
-  rows too. Use it via [json-token-format](https://github.com/k1y0miiii/json-token-format).
+  rows too. Use it via [json-token-format](https://github.com/k1y0miiii/jtf).
 - **CSV/TSV** are even smaller (`users`: −67.5%) **but lossy** — CSV has no types,
   so `36` becomes `"36"` and `false` becomes `"false"`. Fine if your data is
   already all strings or the model is told to treat cells as strings; otherwise

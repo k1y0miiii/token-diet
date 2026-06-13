@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # ---------------------------------------------------------------------------
 # Vendored from json-token-format (JTF), the real reference encoder.
-#   Source : https://github.com/k1y0miiii/json-token-format
+#   Source : https://github.com/k1y0miiii/jtf
 #   License: MIT, Copyright (c) 2026 Maxim Chumakov (k1y0miiii)
 # This is an unmodified copy of jtf.py so that `token-diet` measures the TRUE
 # JTF format and stays self-contained (no runtime dependency on the original).

@@ -12,7 +12,7 @@ English · [Русский](README.ru.md)
 
 > **Put your LLM payloads on a token diet.** The same data, measured in every encoding — so you stop guessing and start cutting your token bill.
 
-Most apps send LLMs pretty-printed JSON. That is the most expensive way to ship structured data. **token-diet** measures, for real, how many tokens the *same* data costs across encodings (minified JSON, short keys, [JTF](https://github.com/k1y0miiii/json-token-format), CSV/TSV, YAML) — with a reproducible leaderboard. Numbers are counted with `tiktoken`, never invented.
+Most apps send LLMs pretty-printed JSON. That is the most expensive way to ship structured data. **token-diet** measures, for real, how many tokens the *same* data costs across encodings (minified JSON, short keys, [JTF](https://github.com/k1y0miiii/jtf), CSV/TSV, YAML) — with a reproducible leaderboard. Numbers are counted with `tiktoken`, never invented.
 
 ## Leaderboard (really measured)
 
@@ -60,7 +60,7 @@ Every encoder serializes the **same** parsed JSON, then we count tokens with `ti
 | `json-pretty` | `indent=2` — the baseline most apps send | yes | no (native) |
 | `json-min` | minified, `separators=(",",":")` | yes | no (native) |
 | `json-shortkeys` | minified + a lossless key→short map (map counted) | yes | yes (apply the map) |
-| `jtf` | [JSON Token Format](https://github.com/k1y0miiii/json-token-format), the real vendored encoder | yes | yes (JTF decoder) |
+| `jtf` | [JSON Token Format](https://github.com/k1y0miiii/jtf), the real vendored encoder | yes | yes (JTF decoder) |
 | `csv` / `tsv` | flat arrays-of-objects only; N/A otherwise | for string cells | yes |
 | `yaml` | human-readable; usually *more* tokens than JSON | yes | yes |
 
@@ -130,7 +130,7 @@ The distilled, copy-paste tactics, **biggest wins first**. See [PLAYBOOK.md](PLA
 
 Built by **Maxim Chumakov** ([@k1y0miiii](https://github.com/k1y0miiii)).
 
-- [json-token-format (JTF)](https://github.com/k1y0miiii/json-token-format) — the lossless, token-efficient JSON encoding benchmarked here (vendored).
+- [json-token-format (JTF)](https://github.com/k1y0miiii/jtf) — the lossless, token-efficient JSON encoding benchmarked here (vendored).
 - [glyph-mcp](https://github.com/k1y0miiii/glyph-mcp) — web → clean text for LLMs (~8× fewer tokens on web pages).
 - [llmcost](https://github.com/k1y0miiii/llmcost) — exact LLM token & price accounting, including Claude via `--api`.
 
